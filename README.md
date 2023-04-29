@@ -1,14 +1,15 @@
 # Metaheuristics
 
 Simple implementation of the Hill-Climbing and Iterated Local Search metaheuristics for 2 functions, each function with 2 different domains. 
-Each metaheuristic is executed 30 times for every domain (2 for the first function and 2 for the second function), adding up to 120 times. 
-In the end the program outputs a few things for every domain:
+Each metaheuristic is executed 30 times for every domain, adding up to 120 times. 
+In the end the program outputs the following things for every domain:
 
- + Best result found.
- + Worst result found
- + Avarage result
- + Standard deviation
- + BoxPlot of the results
+ + Best result.
+ + Worst result.
+ + Avarage result.
+ + Standard deviation.
+
+In the end, the program shows a BoxPlot of the results as well.
 
 ## Function 1:
 
