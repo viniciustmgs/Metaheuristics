@@ -13,7 +13,7 @@ In the end, the program shows a BoxPlot of the results as well.
 
 ## Function 1:
 
- $$x^2+y^2+25(sin^2(x)+sin^2(y))$$
+ $$f(x,y)=x^2+y^2+25(sin^2(x)+sin^2(y))$$
  
  
  <p align="center">
@@ -29,7 +29,7 @@ In the end, the program shows a BoxPlot of the results as well.
  
 ## Function 2:
   
- $$-(y+47)sin(\sqrt{|y+0.5y+47|})-x sin(\sqrt{|x-(y+47)|})$$
+ $$f(x,y)=-(y+47)sin(\sqrt{|y+0.5y+47|})-x sin(\sqrt{|x-(y+47)|})$$
  
  <p align="center">
   <img src="https://user-images.githubusercontent.com/73348806/235328113-928ffeda-64c5-4894-a7ed-e897fa92d9fa.png"/>
