@@ -13,24 +13,49 @@ def generateInitialSolution (domain):
     return solution
 
 def plot(resultsHillClimbing, resultsILS):
-    dataHillClimbing = []
-    dataIteratedLocalSearch = []
+    dataFunction1HC = []
+    dataFunction1ILS = []
+    dataFunction2HC = []
+    dataFunction2ILS = []
     for x in range(4):
         data1 = []
         data2 = []
+        data3 = []
+        data4 = []
         for y in range(30):
-            data1.append(resultsHillClimbing[x][y][1])
-            data2.append(resultsILS[x][y][1])
-        dataHillClimbing.append(data1)
-        dataIteratedLocalSearch.append(data2)    
-    #print(iteratedLocalSearch(function2, domains[3], generateInitialSolution(domains[3])))
-    #fig = plt.figure(figsize =(10, 7))
-    fig1 = plt.figure(figsize=(10, 7))
-    fig2 = plt.figure(figsize=(10, 7))
-    ax1 = fig1.add_axes([0, 0, 1, 1])
-    ax2 = fig2.add_axes([0, 0, 1, 1])
-    ax1.boxplot(dataHillClimbing)
-    ax2.boxplot(dataIteratedLocalSearch)
+            if (x < 2):    
+                data1.append(resultsHillClimbing[x][y][1])
+                data2.append(resultsILS[x][y][1])
+            else:
+                data3.append(resultsHillClimbing[x][y][1])
+                data4.append(resultsILS[x][y][1])    
+        if (x < 2):
+            dataFunction1HC.append(data1)
+            dataFunction1ILS.append(data2)
+        else:
+            dataFunction2HC.append(data3)
+            dataFunction2ILS.append(data4) 
+    
+    #fig1 = plt.figure(figsize=(10, 7))
+    #fig2 = plt.figure(figsize=(10, 7))
+    #ax1 = fig1.add_axes([0, 0, 1, 1])
+    #ax2 = fig2.add_axes([0, 0, 1, 1])
+    #fig1 = plt.figure()
+    #ax1 = fig1.add_axes([0, 0, 1, 1])
+    #fig2 = plt.figure()
+    #ax2 = fig2.add_axes([0, 0, 1, 1])
+    #fig3 = plt.figure()
+    #ax3 = fig3.add_axes([0, 0, 1, 1])
+    #fig4 = plt.figure()
+    #ax4 = fig4.add_axes([0, 0, 1, 1])
+
+    plt.boxplot(dataFunction1HC)
+    plt.show()
+    plt.boxplot(dataFunction1ILS)
+    plt.show()
+    plt.boxplot(dataFunction2HC)
+    plt.show()
+    plt.boxplot(dataFunction2ILS)
     plt.show()
 
 def main():
