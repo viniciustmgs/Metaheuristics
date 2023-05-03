@@ -1,8 +1,6 @@
 import random
 import math
 
-# Hill-Climbing
-
 def hillClimbingNoise (solution, domain):
     newSolution = []
     noise = math.fabs((domain[1]-domain[0])*0.01)
