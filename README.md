@@ -9,7 +9,7 @@ In the end the program outputs the following things for every domain:
  + Avarage result.
  + Standard deviation.
 
-In the end, the program shows a BoxPlot of the results as well.
+The program shows a BoxPlot of the results as well.
 
 ## Function 1:
 
