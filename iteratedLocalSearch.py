@@ -45,6 +45,6 @@ def iteratedLocalSearch(function, domain, initialSolution):
         optModifiedSolution = hillClimbing(function, domain, 100, modifiedSolution)[0]
         memory = acceptanceCriteria(function, solution, optModifiedSolution, memory)
         solution = memory[1]
-    solution = hillClimbing(function, domain, 1000, memory[0])[0]    
+    solution = hillClimbing(function, domain, 100000, memory[0])[0]    
     result = function.calculate(solution[0], solution[1])
     return [solution, result]    
