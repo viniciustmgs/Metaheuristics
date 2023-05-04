@@ -42,4 +42,10 @@ The program shows a BoxPlot of the results as well.
   Domain D: $400 ≤ x, y ≤ 512$
  </p>
  
- 
+## Running the program: 
+
+Just run main.py:
+
+```
+python3 main.py
+```
