@@ -101,7 +101,7 @@ def main():
     resultsILS = []
     resultsHillClimbing = []
     percentage = 0
-    print("\nAguarde a execução do programa: \n")
+    print("\nAguarde a execução do programa (isso pode demorar vários minutos): \n")
     for i in range(4):
         executionILS = []
         executionHillClimbing = []
@@ -110,7 +110,7 @@ def main():
                 # entra nesse if se for os domínios A e B, portanto executa as meta-heurísticas
                 # para a função 1
                 initialSolution = generateInitialSolution(domains[i])
-                executionHillClimbing.append(hillClimbing(function1, domains[i], 100, initialSolution))
+                executionHillClimbing.append(hillClimbing(function1, domains[i], 100000, initialSolution))
                 initialSolution = generateInitialSolution(domains[i])
                 executionILS.append(iteratedLocalSearch(function1, domains[i], initialSolution))
             else:
@@ -118,7 +118,7 @@ def main():
                 # para a função 2
                 
                 initialSolution = generateInitialSolution(domains[i])
-                executionHillClimbing.append(hillClimbing(function2, domains[i], 100, initialSolution))
+                executionHillClimbing.append(hillClimbing(function2, domains[i], 100000, initialSolution))
                 initialSolution = generateInitialSolution(domains[i])
                 executionILS.append(iteratedLocalSearch(function2, domains[i], initialSolution))
             percentage += 1

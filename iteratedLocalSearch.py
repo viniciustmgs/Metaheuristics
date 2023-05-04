@@ -40,7 +40,7 @@ def iteratedLocalSearch(function, domain, initialSolution):
     solution = hillClimbing(function, domain, 100, initialSolution)[0]
     stopCondition = 0
     memory = [solution, solution, stopCondition]
-    while(memory[2] < 1000):
+    while(memory[2] < 10000):
         modifiedSolution = iteratedLocalSearchNoise(solution, domain)
         optModifiedSolution = hillClimbing(function, domain, 100, modifiedSolution)[0]
         memory = acceptanceCriteria(function, solution, optModifiedSolution, memory)
