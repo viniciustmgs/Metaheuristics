@@ -15,7 +15,6 @@ class Results:
         if (solution[1] > self.worst[1]):
             self.worst = solution
         self.results.append(solution[1])
-        print(self.results)
     
     def calculate(self):
         self.avarage = np.mean(self.results)
