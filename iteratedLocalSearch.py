@@ -10,17 +10,12 @@ def acceptanceCriteria(function, solution, modifiedSolution, memory):
         memory[2] += 1
         return memory
     else:
-        if(modifiedResult < solutionResult):
-            memory[1] = modifiedSolution
-            memory[2] += 1
-            if(modifiedResult < bestResult):
-                memory[0] = modifiedSolution
-                memory[2] = 0
-            return memory
-        else:
-            memory[1] = modifiedSolution
-            memory[2] += 1
-            return memory
+        memory[1] = modifiedSolution
+        memory[2] += 1
+        if(modifiedResult < bestResult):
+            memory[0] = modifiedSolution
+            memory[2] = 0
+        return memory
 
 def iteratedLocalSearchNoise(solution, domain):
     newSolution = []
