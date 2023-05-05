@@ -17,7 +17,6 @@ def hillClimbing (function, domain, stopCondition, initialSolution):
     solution = initialSolution
     result = function.calculate(initialSolution[0], initialSolution[1])
     limitCounter = 0
-    iterations = 0
     while(limitCounter < stopCondition):
         modifiedSolution = hillClimbingNoise(solution, domain)
         modifiedResult = function.calculate(modifiedSolution[0], modifiedSolution[1])
