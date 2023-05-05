@@ -5,8 +5,6 @@ from hillClimbing import hillClimbing
 from iteratedLocalSearch import iteratedLocalSearch
 from results import Results
 
-# iniciando a execução das meta-heurísticas em um loop, cada uma das 2 é executada
-# 30 vezes para cada um dos domínios 
 # gerador de solução inicial
 
 def generateInitialSolution (domain):
@@ -93,6 +91,9 @@ def plot(resultsHillClimbing, resultsILS):
     plt.boxplot(dataFunction2ILS, labels=["Domínio C", "Domínio D"])
     plt.title("Função 2: Iterated Local Search")
     plt.show()
+
+# iniciando a execução das meta-heurísticas em um loop, cada uma das 2 é executada
+# 30 vezes para cada um dos domínios 
 
 def main():
     function1 = Function1

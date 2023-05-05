@@ -27,5 +27,4 @@ def hillClimbing (function, domain, stopCondition, initialSolution):
             limitCounter = 0
         else:
             limitCounter += 1
-        iterations += 1
     return [solution, result]       
