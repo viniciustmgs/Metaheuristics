@@ -2,7 +2,7 @@
 
 Simple implementation of the Hill-Climbing and Iterated Local Search metaheuristics to minimize 2 functions, each function with 2 different domains. 
 Each metaheuristic is executed 30 times for every domain, adding up to 120 times. The functions can be changed to any function in the functions.py file, and the number of times each metaheuristic is executed, as well as their stop conditoin can be changed for different results. 
-In the end the program outputs the following things for every domain:
+In the end the program outputs the following informations for every domain:
 
  + Best result.
  + Worst result.
